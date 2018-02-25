@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洗车精灵官网</title>
+	  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_572000_sdv6ar4krw20ggb9.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+			li{
+				list-style: none;
+			}
+			#wrap{
+				min-width: 1200px;
+			}
+			header{
+				height: 50px;
+				padding: 15px 100px;
+			}
+			.nav{
+				float: right;
+			}
+			.nav li{
+				float: left;
+				line-height: 50px;
+				margin: 0 20px;
+				padding: 0 20px;
+				font-size: 14px;
+				color: #737373;
+			}
+			.banner{
+				position: relative;
+			}
+			.banner-content{
+		    position: absolute;
+		    top: 15%;
+		    left: 50%;
+		    width: 1200px;
+		    transform: translateX(-600px);
+			}
+			.banner-left{
+		    margin: 80px 150px 0 0;
+    		color: #fff;
+    		float: left;
+			}
+			.banner-left p:nth-of-type(1){
+				font-size: 38px;
+			}
+			.banner-left p:nth-of-type(2){
+				font-size: 20px;
+				opacity: 0.8;
+				margin: 10px 0;
+			}
+			.banner-left p:nth-of-type(2){
+				font-size: 20px;
+				opacity: 0.8;
+				margin: 10px 0 40px;
+			}
+			.banner-left p:nth-of-type(3) a{
+				display: block;
+				width: 156px;
+				height: 46px;
+				border: 1px solid #fff;
+				border-radius: 4px;
+				text-align: center;
+				line-height: 46px;
+			}
+			.banner-right{
+    		position: relative;
+				float: left;
+				color: #fff;
+			}
+			.banner-right p{
+				position: absolute;
+				opacity: .8;
+			}
+			.describe1{
+		    top: 192px;
+    		left: -124px;
+			}
+			.describe1 i{
+		    display: block;
+		    content: '';
+		    width: 105px;
+		    height: 2px;
+		    position: absolute;
+		    background: #fff;
+		    opacity: .8;
+		    left: 56px;
+			}
+			.describe2{
+		    top: -22px;
+    		left: 520px;
+			}
+			.describe2 i{
+		    display: block;
+		    content: '';
+		    width: 90px;
+		    height: 36px;
+		    border-left: 2px solid #fff;
+		    border-top: 2px solid #fff;
+		    position: absolute;
+		    opacity: .8;
+		    left: -42px;
+		    top: 22px;
+			}
+			.describe3{
+		    top: 130px;
+    		left: 625px;
+    		width: 120px;
+			}
+			.describe3 i{
+		    display: block;
+		    content: '';
+		    width: 165px;
+		    height: 2px;
+		    position: absolute;
+		    background: #fff;
+		    opacity: .8;
+		    left: -100px;
+			}
+			.describe4{
+		    top: 224px;
+    		left: 550px;
+    		width: 140px;
+			}
+			.describe4 i{
+		    display: block;
+		    content: '';
+		    width: 186px;
+		    height: 2px;
+		    position: absolute;
+		    background: #fff;
+		    opacity: .8;
+		    left: -128px;
+			}
+			.blink{
+				animation:flash 1s infinite  cubic-bezier(1,0,0.5,0) ;
+			}
+			@keyframes flash {
+		    0%{
+		        opacity: 0;
+		    }
+		    50%{
+		        opacity: 1;
+		        font-size: 16px;
+		    }
+		    100%{
+		        opacity: 0;
+		    }
+			}
+			.left-move{
+				animation: leftmove 1s ease-out;
+			}
+			.right-move{
+				animation: rightmove 1s ease-out;
+			}
+			@keyframes leftmove{
+				from{
+					transform: translateX(-100%);
+				}
+				to{
+					transform: translateX(0);
+				}
+			}
+			@keyframes rightmove{
+				from{
+					transform: translateX(100%);
+				}
+				to{
+					transform: translateX(0);
+				}
+			}
+			.title{
+				width: 580px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.title p:nth-of-type(1){
+				font-size: 24px;
+				position: relative;
+			}
+			.title p:nth-of-type(1):before{
+				display: block;
+				content: '';
+				width: 150px;
+				height: 1px;
+				background: #ccc;
+				position: relative;
+				top: 17px;
+			}
+			.title p:nth-of-type(1):after{
+				display: block;
+				content: '';
+				width: 150px;
+				height: 1px;
+				background: #ccc;
+				position: absolute;
+				top: 17px;
+				right: 0;
+			}
+			.title p:nth-of-type(2){
+				color: #777;
+				margin: 15px 0;
+			}
+			.operation{
+				width: 870px;
+				margin: 80px auto;
+			}
+			.operation .fadein-img{
+				transform: scale(0);
+				animation: fadein .5s linear 1.5s;
+				animation-fill-mode: forwards;
+			}
+			.advantage{
+		    width: 1150px;
+    		margin: 80px auto;
+    		overflow: hidden;
+			}
+			.advantage-describe{
+				width: 450px;
+				float: right;
+			}
+			.advantage .fadein-img{
+				transform: scale(0);
+				animation: fadein .5s linear 3.5s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes fadein{
+				from{
+					transform: scale(0);
+				}
+				to{
+					transform: scale(1);
+				}
+			}
+			.advantage-describe li{
+				padding-left: 100px;
+				position: relative;
+				margin-bottom: 20px;
+			}
+			.advantage-describe li i{
+				position: absolute;
+				font-size: 28px;
+				color: #00d1ff;
+				left: 30px;
+				top: 10px;
+			}
+			.advantage-describe li p:nth-of-type(1){
+				font-size: 20px;
+				line-height: 50px;
+			}
+			.advantage-describe li p:nth-of-type(2){
+				color: #777;
+			}
+			footer{
+				margin-top: 120px;
+			}
+			.contact{
+				height: 206px;
+				background: #023559;
+				color: #fff;
+				padding-top: 50px;
+				font-size: 14px;
+			}
+			.contact-left{
+				margin-left: 80px;
+				float: left;
+			}
+			.contact-left .tel{
+				font-size: 28px;
+				line-height: 46px;
+			}
+			.contact-right{
+				margin-right: 80px;
+				height: 160px;
+				float: right;
+			}
+			.contact-right p{
+				line-height: 30px;
+				text-align: center;
+			}
+			.copy-right{
+				height: 46px;
+				overflow: hidden;
+				margin: 0 30px;
+				line-height: 46px;
+				clear: both;
+			}
+			.copy-right:before{
+				display: block;
+				content: '';
+				height: 1px;
+				background: #ebebeb;
+				opacity: 0.38;
+			}
+			.copy-right p:nth-of-type(1){
+				float: left;
+				margin-left: 60px;
+			}
+			.copy-right p:nth-of-type(2){
+				float: right;
+				margin-right: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<img src="images/logo.png" width="165">
+				<ul class="nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="system-solution.html">系统解决方案</a>
+					</li>
+					<li>
+						<a href="project_cooperation.html">项目合作</a>
+					</li>
+				</ul>
+			</header>
+			<div id="main">
+				<div class="banner">
+					<img src="images/bg01.png" width="100%">
+					<div class="banner-content">
+						<div class="banner-left">
+							<p class="left-move">打造高端智能洗车房</p>
+							<p class="left-move">Create high-end smart car wash</p>
+							<p><a class="left-move" href="project_cooperation.html">项目合作</a></p>
+						</div>
+						<div class="banner-right right-move">
+							<p class="describe1"><span class="blink">微信公众号扫码</span><i></i></p>
+							<p class="describe2"><span class="blink">24h共享洗车</span><i></i></p>
+							<p class="describe3"><span class="blink">全自动智能洗车</span><i></i></p>
+							<p class="describe4"><span class="blink">高科技水循环系统</span><i></i></p>
+							<img src="images/img01.png" width="620" />
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">
+						<p>洗车精灵洗车流程操作图</p>
+						<p>CAR WASH WIZARD CARWASH PROCESS OPERATION DIAGRAM</p>
+					</div>
+					<div class="operation">
+						<img class="fadein-img" src="images/img02.png" width="100%" />
+					</div>
+					<div class="title">
+						<p>竞争优势</p>
+						<p>COMPETITIVE ADVANTAGE</p>
+					</div>
+					<div class="advantage">
+						<img class="fadein-img" src="images/img03.png" width="650" />
+						<ul class="advantage-describe">
+							<li>
+								<i class="iconfont icon-refresh"></i>
+								<p>3分钟洗车</p>
+								<p>3分钟洗一台车，是传统洗车效率的10倍</p>
+							</li>
+							<li>
+								<i class="iconfont icon-lingdang"></i>
+								<p>零人工</p>
+								<p>自助付费，自助洗车实现无人式洗车</p>
+							</li>
+							<li>
+								<i class="iconfont icon-24hours"></i>
+								<p>24小时</p>
+								<p>全天24小时营业，满足不同时段洗车需求</p>
+							</li>
+							<li>
+								<i class="iconfont icon-star"></i>
+								<p>价格低</p>
+								<p>单次15元，会员199洗半年</p>
+							</li>
+							<li>
+								<i class="iconfont icon-dianzan"></i>
+								<p>质量高</p>
+								<p>高压冲洗，灰尘跑光光</p>
+							</li>
+							<li>
+								<i class="iconfont icon-security"></i>
+								<p>0伤漆</p>
+								<p>水压冲洗，自动风干，不伤漆</p>
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<p>与我们合作</p>
+						<p>COOPERATE WITH US</p>
+					</div>
+					<div class="advantage">
+						<img src="images/img04.png" width="100%" />
+					</div>
+				</div>
+			</div>
+			<footer>
+				<!--<div class="teamwork">
+					<p>快速提交你的需求</p>
+					<p>如果您有合作的意愿，请留下你的信息， 我们会及时给您回复</p>
+					<p><input placeholder="姓名" ><input placeholder="电话" ></p>
+					<p><a>提交</a></p>
+				</div>-->
+				<div class="contact">
+					<div class="contact-left">
+						<p>服务热线：</p>
+						<p class="tel">400-800-5555</p>
+						<p>服务时间09:00-21:00</p>
+					</div>
+					<div class="contact-right">
+						<img src="images/QRcode.png" width="86">
+						<p>微信公众号</p>
+					</div>
+					<div class="copy-right">
+						<p>Copyright 2016 All rights reserved.</p>
+						<p>China: +86 2 33 44 55 66  US: +11 222 333 444  support@shark.com</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洗车精灵官网</title>
+	  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_572000_sdv6ar4krw20ggb9.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+			li{
+				list-style: none;
+			}
+			#wrap{
+				min-width: 1200px;
+			}
+			header{
+				height: 50px;
+				padding: 15px 100px;
+			}
+			.nav{
+				float: right;
+			}
+			.nav li{
+				float: left;
+				line-height: 50px;
+				margin: 0 20px;
+				padding: 0 20px;
+				font-size: 14px;
+				color: #737373;
+			}
+			.title{
+				width: 580px;
+				margin: 50px auto;
+				text-align: center;
+			}
+			.title p:nth-of-type(1){
+				font-size: 24px;
+				position: relative;
+			}
+			.title p:nth-of-type(1):before{
+				display: block;
+				content: '';
+				width: 150px;
+				height: 1px;
+				background: #ccc;
+				position: relative;
+				top: 17px;
+			}
+			.title p:nth-of-type(1):after{
+				display: block;
+				content: '';
+				width: 150px;
+				height: 1px;
+				background: #ccc;
+				position: absolute;
+				top: 17px;
+				right: 0;
+			}
+			.title p:nth-of-type(2){
+				color: #777;
+				margin: 15px 0;
+			}
+			.operation{
+				width: 1100px;
+				margin: 0 auto;
+				padding-bottom: 80px;
+				overflow: hidden;
+				font-size: 14px;
+				color: #707070;
+			}
+			.operation >img{
+				float: left;
+				margin-right: 50px;
+				margin-left: 61px;
+			}
+			.operation p:nth-of-type(2){
+				margin: 30px 0 15px;
+			}
+			.bg-box{
+				background: #f4f4f4;
+				overflow: hidden;
+				margin-bottom: 90px;
+			}
+			.feature{
+				margin: 0 auto;
+				width: 1000px;
+				height: 360px;
+				overflow: hidden;
+			}
+			.feature li{
+				width: 160px;
+				float: left;
+				margin: 45px;
+				text-align: center;
+				font-size: 14px;
+			}
+			.feature li img{
+				animation: scaling 1s ease infinite;
+			}
+			.feature li p{
+				margin-top: 10px;
+			}
+			@keyframes scaling{
+				0%{
+					transform: scale(0.94);
+				}
+				50%{
+					transform: scale(1);
+				}
+				100%{
+					transform: scale(.94);
+				}
+			}
+			.return{
+				margin: 70px auto 90px;
+				width: 990px;
+				overflow: hidden;
+			}
+			.return li{
+				width: 290px;
+				height: 285px;
+				margin: 0 20px;
+				float: left;
+				background: #f0f0f0;
+				font-size: 14px;
+				color: #707070;
+			}
+			.return li p{
+				margin-left: 20px;
+				line-height: 20px;
+			}
+			.return li p:nth-of-type(1){
+				margin: 5px 0 5px 20px;
+			}
+			.cooperation-mode{
+				width: 1128px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.cooperation-mode li{
+				width: 336px;
+				height: 448px;
+				float: left;
+				background: #fff;
+				margin: 20px 20px 110px;
+				color: #707070;
+				font-size: 14px;
+			}
+			.cooperation-mode li p{
+				margin-left: 20px;
+				line-height: 20px;
+			}
+			.cooperation-mode li p:nth-of-type(1){
+		    margin: 20px 0 5px 20px;
+			}
+			.contact-us{
+				font-size: 14px;
+				overflow: hidden;
+				margin: 60px auto 100px;
+				width: 1100px;
+			}
+			.contact-us iframe{
+				float: left;
+				margin-right: 40px;
+				width: 634px;
+				height: 427px;
+			}
+			.contact-us p{
+				margin-bottom: 5px;
+			}
+			#left-panel{
+				display: none;
+			}
+			.teamwork{
+				height: 280px;
+				padding-top: 20px;
+				text-align: center;
+				background: #05c3ff;
+				color: #fff;
+				line-height: 45px;
+			}
+			.teamwork p:nth-of-type(2){
+				font-size: 14px;
+				margin-bottom: 10px;
+			}
+			.teamwork input{
+				width: 190px;
+				height: 28px;
+				border: none;
+				margin: 0 30px;
+				padding-left: 10px;
+			}
+			.teamwork a{
+				display: block;
+				width: 230px;
+				height: 36px;
+				border: 1px solid #fff;
+				border-radius: 4px;
+				text-align: center;
+				line-height: 36px;
+				margin: 40px auto 0;
+				font-size: 14px;
+			}
+			.contact{
+				height: 206px;
+				background: #023559;
+				color: #fff;
+				padding-top: 50px;
+				font-size: 14px;
+			}
+			.contact-left{
+				margin-left: 80px;
+				float: left;
+			}
+			.contact-left .tel{
+				font-size: 28px;
+				line-height: 46px;
+			}
+			.contact-right{
+				margin-right: 80px;
+				height: 160px;
+				float: right;
+			}
+			.contact-right p{
+				line-height: 30px;
+				text-align: center;
+			}
+			.copy-right{
+				height: 46px;
+				overflow: hidden;
+				margin: 0 30px;
+				line-height: 46px;
+				clear: both;
+			}
+			.copy-right:before{
+				display: block;
+				content: '';
+				height: 1px;
+				background: #ebebeb;
+				opacity: 0.38;
+			}
+			.copy-right p:nth-of-type(1){
+				float: left;
+				margin-left: 60px;
+			}
+			.copy-right p:nth-of-type(2){
+				float: right;
+				margin-right: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<img src="images/logo.png" width="165">
+				<ul class="nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="system-solution.html">系统解决方案</a>
+					</li>
+					<li>
+						<a href="project_cooperation.html">项目合作</a>
+					</li>
+				</ul>
+			</header>
+			<div id="main">
+				<div class="banner">
+					<img src="images/img05.jpeg" width="100%">
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">
+						<p>项目简介</p>
+						<p>PROJECT DESCRIPTION</p>
+					</div>
+					<div class="operation">
+						<img class="fadein-img" src="images/img06.png" width="458" />
+						<p>洗车精灵项目隶属于武汉网众科技有限公司，公司成立于2015年，是高科技互联网行业，独创“全自动洗车智能洗车模式。我们拥有自主研发知识产权的集成式智能洗车房。集产品研发、生产，运营为一体。专注于为车主提供24小时全自动快速洗车服务，我们有业内优秀的团队，全新的经营理念，规范有序的管理流程和制度，并与多家汽车后服务产业集群、物业、加油站等单位紧密合作、创全新的独有模式打造汽车后市场连锁品牌。</p>
+						<p>微信公众号：</p>
+						<p><img src="images/QRcode.png" width="86"></p>
+					</div>
+					<div class="bg-box">
+						<div class="title">
+							<p>项目特点</p>
+							<p>PROJECT FEATURES</p>
+						</div>
+						<ul class="feature">
+							<li>
+								<img src="images/img07.png" width="160" />
+								<p>投资成本低</p>
+							</li>
+							<li>
+								<img src="images/img08.png" width="160" />
+								<p>收益回报快</p>
+							</li>
+							<li>
+								<img src="images/img09.png" width="160" />
+								<p>运营简单</p>
+							</li>
+							<li>
+								<img src="images/img10.png" width="160" />
+								<p>互联网+</p>
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<p>投资回报</p>
+						<p>RETURN ON INVESTMENT</p>
+					</div>
+					<ul class="return">
+						<li>
+							<img src="images/img11.png" width="290" />
+							<p>洗车收益</p>
+							<p>日均洗车100台</p>
+							<p>收益500元</p>
+						</li>
+						<li>
+							<img src="images/img12.png" width="290" />
+							<p>其他商品收益</p>
+							<p>微信公众号网上汽车商品平</p>
+							<p>台，销售汽车相关产品</p>
+						</li>
+						<li>
+							<img src="images/img13.png" width="290" />
+							<p>汽车保养服务</p>
+							<p>微信公众号网上汽车商品平</p>
+							<p>台，销售汽车相关产品</p>
+						</li>
+					</ul>
+					<div class="bg-box">
+						<div class="title">
+							<p>合作模式</p>
+							<p>COOPERATION MODE</p>
+						</div>
+						<ul class="cooperation-mode">
+							<li>
+								<img src="images/img14.png" width="336" />
+								<p>物业合作模式</p>
+								<p>日均洗车100台</p>
+								<p>收益500元</p>
+							</li>
+							<li>
+								<img src="images/img15.png" width="336" />
+								<p>加盟合作模式</p>
+								<p>日均洗车100台</p>
+								<p>收益500元</p>
+							</li>
+							<li>
+								<img src="images/img16.png" width="336" />
+								<p>加油站合作模式</p>
+								<p>日均洗车100台</p>
+								<p>收益500元</p>
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<p>联系我们</p>
+						<p>CONTACT US</p>
+					</div>
+					<div class="contact-us">
+						<iframe src="map.html"></iframe>
+						<p>公司地址：湖北省武汉市光谷总部国际9栋605室</p>
+						<p>联系电话：027-522222222</p>
+						<p>邮箱地址： 25542222</p>
+						<p>微信联系：</p>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="contact">
+					<div class="contact-left">
+						<p>服务热线：</p>
+						<p class="tel">400-800-5555</p>
+						<p>服务时间09:00-21:00</p>
+					</div>
+					<div class="contact-right">
+						<img src="images/QRcode.png" width="86">
+						<p>微信公众号</p>
+					</div>
+					<div class="copy-right">
+						<p>Copyright 2016 All rights reserved.</p>
+						<p>China: +86 2 33 44 55 66  US: +11 222 333 444  support@shark.com</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
